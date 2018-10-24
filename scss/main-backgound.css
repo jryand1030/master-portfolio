@@ -9,6 +9,10 @@ html {
   z-index: 3;
 }
 
+.btn {
+  text-align: center;
+}
+
 .animatedbackground {
   position: relative;
   height: 50%;
@@ -112,5 +116,13 @@ html {
   z-index: 1;
   -webkit-animation: move-twink-back 200s linear infinite;
   animation: move-twink-back 200s linear infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  #name {
+    position: relative;
+    margin-top: 2px;
+    height: 45%;
+  }
 }
 /*# sourceMappingURL=main-backgound.css.map */

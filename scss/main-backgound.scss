@@ -7,7 +7,9 @@ html{
     height:50%;
     z-index: 3;
 }
-
+.btn{
+    text-align: center;
+}
 .animatedbackground{
     position: relative;
     height:50%;
@@ -15,6 +17,7 @@ html{
     background-color:black;
     z-index: 3;
 }
+
 #name{
 
     position:absolute;
@@ -27,6 +30,7 @@ html{
     height:80%;
     display:block;
     z-index: 3;
+    
 }
 .canvas{
     background: url(/images/backround/backround.jpg);
@@ -128,7 +132,13 @@ html{
   animation:move-twink-back 200s linear infinite;
 }
 
-
+@media only screen and (max-width:600px){
+    #name{
+        position: relative;
+        margin-top:2px;
+        height:45%;
+    }
+    }
 
 
 
