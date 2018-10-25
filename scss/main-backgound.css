@@ -46,6 +46,12 @@ html {
   overflow: hidden;
 }
 
+@supports (-ms-ime-align: auto) and (-webkit-text-stroke: initial) {
+  #name {
+    margin-top: 0%;
+  }
+}
+
 @keyframes move-twink-back {
   from {
     background-position: 0 0;

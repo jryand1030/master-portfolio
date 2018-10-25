@@ -35,7 +35,7 @@ a:hover{
 .newspaper {
   display:grid;
   width: 90%;
-  height:91%;
+  height:auto;
   background: linear-gradient(
     135deg,
     rgba(239, 239, 239, 1) 0%,
@@ -180,7 +180,7 @@ p {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 4;
     padding: 0 0.5rem;
     margin-top:70px;
     margin-left:5px;
@@ -195,12 +195,14 @@ p {
 
 @media screen and (max-width: 40em){
   .copy {
+    float:left;
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 3;
+    grid-row-start: 7;
     grid-row-end: 5;
     column-count: 1;
     padding: 1vw;
+    height:auto;
   }
 
   }
@@ -211,7 +213,11 @@ p {
 
     }
   }
-
+  @media screen and (max-width: 40em){
+    .headline{
+      height:50%;
+    }
+    }
   @media screen and (max-width: 40em){
     .menu{
     text-align: center;
@@ -228,5 +234,4 @@ p {
       font-size: 1rem;
       font-family: $font-body;
       }
-
     }

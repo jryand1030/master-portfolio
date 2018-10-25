@@ -48,7 +48,7 @@ a:hover {
   display: -ms-grid;
   display: grid;
   width: 90%;
-  height: 91%;
+  height: auto;
   background: linear-gradient(135deg, #efefef 0%, white 17%, white 49%, lightgray 73%, #ededed 89%, #bcbcbc 100%);
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -230,7 +230,7 @@ p {
     grid-column-end: 5;
     -ms-grid-row: 2;
         grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 4;
     padding: 0 0.5rem;
     margin-top: 70px;
     margin-left: 5px;
@@ -245,15 +245,17 @@ p {
 
 @media screen and (max-width: 40em) {
   .copy {
+    float: left;
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 5;
-    -ms-grid-row: 3;
-        grid-row-start: 3;
+    -ms-grid-row: 7;
+        grid-row-start: 7;
     grid-row-end: 5;
     -webkit-column-count: 1;
             column-count: 1;
     padding: 1vw;
+    height: auto;
   }
 }
 
@@ -261,6 +263,12 @@ p {
   p {
     font-size: 12px;
     font-family: "Merriweather", serif;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .headline {
+    height: 50%;
   }
 }
 

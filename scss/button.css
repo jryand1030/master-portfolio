@@ -27,18 +27,13 @@ body {
   width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  .btn {
-    margin: 3%;
-  }
-}
-
 .btn {
   text-align: center;
   display: inline-block;
   font-size: 20px;
   text-transform: uppercase;
-  text-decoration: none;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
   letter-spacing: 1px;
   background-color: transparent;
   border: 0;

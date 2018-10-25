@@ -48,7 +48,12 @@ html{
 }
  
 
-
+@supports (-ms-ime-align:auto)
+    and (-webkit-text-stroke:initial) {
+        #name {
+            margin-top:0%;
+        }
+    }
 
 @keyframes move-twink-back {
     from {background-position:0 0;}
@@ -80,7 +85,7 @@ html{
     to {background-position:10000px 0;}
 }
 @-ms-keyframes move-clouds-back {
-    from {background-position: 0;}
+    from {background-position: 0}
     to {background-position:10000px 0;}
 }
 .clouds{
@@ -93,7 +98,7 @@ html{
     opacity:1;
 
   -moz-animation:move-clouds-back 200s linear infinite;
-  -ms-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 3s linear infinite;
   -o-animation:move-clouds-back 200s linear infinite;
   -webkit-animation:move-clouds-back 200s linear infinite;
   animation:move-clouds-back 300s linear infinite;
